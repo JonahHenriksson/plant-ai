@@ -29,7 +29,7 @@ def create_license():
     }
 
 def create_annotation(file_path, categories):
-    category = path.basename(file_path).split("-")[0]
+    category = path.basename(file_path).rsplit("-",1)[0]
     if category in categories:
         category_id = categories[category]["id"]
         id_ = int(path.basename(file_path).rsplit("-", 1)[1].split(".")[0])
