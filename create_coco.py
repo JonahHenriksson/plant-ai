@@ -44,7 +44,7 @@ def create_annotation(file_path, categories):
             "ignore": 0,
         }
     else:
-        num = len(categories)
+        num = len(categories) + 1
         id_ = int(path.basename(file_path).rsplit("-", 1)[1].split(".")[0])
         categories[category] = {
             "id": num,
