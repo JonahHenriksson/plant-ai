@@ -2,13 +2,13 @@ import json
 import os
 from os import path
 
-DIRECTORY = "./images"
+DIRECTORY = "./train-images"
 
 def create_info():
     return {
         "year": 2020,
         "version": "0.1.0",
-        "description": "PlantVillage dataset in COCO format",
+        "description": "PlantVillage Training COCO Dataset",
         "contributor": "Jonah Henriksson"
     }
 
